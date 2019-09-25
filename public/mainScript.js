@@ -15,7 +15,6 @@ $(function () {
   // Prompt for setting a username
   var username;
   var connected = false;
-  var proceed = false;
   var typing = false;
   var $currentInput = $usernameInput.focus();
   var $activeUsers = $('.activeUsers');

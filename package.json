@@ -1,0 +1,30 @@
+{
+  "name": "heroku-node-sample-groupa",
+  "version": "1.0.0",
+  "description": "A simple Node app deployed to Heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alchristophergwapo/heroku-node-sample-groupa.git"
+  },
+  "keywords": [
+    "heroku",
+    "node"
+  ],
+  "author": "alchristophergwapo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alchristophergwapo/heroku-node-sample-groupa/issues"
+  },
+  "engines": {
+    "node": "10.15"
+  },
+  "homepage": "https://github.com/alchristophergwapo/heroku-node-sample-groupa#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}

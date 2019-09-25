@@ -14,12 +14,9 @@
   <div class="container">
     <div class="jumbotron text-center">
       <h1>Socket.IO</h1>
-      <p>Welcome to socket.io chatting page</p>
+      <p>에 오신 것을 환영합니다 socket.io 채팅 페이지</p>
     </div>
-
-  </div>
-  <div>
-    <li class="login page">
+    <div class="login page">
       <div class="form">
         <div>
           <img src="chat-icon.png" alt="" style="height: 200px;width: auto">
@@ -28,34 +25,32 @@
         <input class="nickName" type="text" maxlength="14" /><br><br>
         <div><button id="submit">Submit</button></div>
       </div>
-    </li>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <ul class="active-user-page">
-        <div class="page-header">
-          <h3>Active Users</h3>
-        </div>
-        <div>
-          <div class="activeUsers">
-
-          </div>
-        </div>
-      </ul>
     </div>
-    <div class="col-sm-8">
-      <ul class="pages">
-        <li class="chat page">
+
+    <div class="row">
+      <div class="col-sm-3">
+        <ul class="active-user-page">
+          <div class="page-header">
+            <h3>Active Users</h3>
+          </div>
+          <div>
+            <div class="activeUsers">
+
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <div class="pages">
           <div class="chatArea">
             <div class="messages"></div>
+            <input class="inputMessage" placeholder="Type here..." /><button id="send">Send</button>
           </div>
-
-          <input class="inputMessage" placeholder="Type here..." /><button id="send">Send</button>
-        </li>
-
-      </ul>
+        </div>
+      </div>
     </div>
   </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
   <script src="https://code.jquery.com/jquery-1.11.1.js"></script>

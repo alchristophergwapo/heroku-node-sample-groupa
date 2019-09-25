@@ -5,7 +5,7 @@ $(function () {
     '#3b88eb', '#3824aa', '#a700ff', '#d300e7'
   ];
 
-  // Initialize variables
+  // Initiapze variables
   var $window = $(window);
   var $usernameInput = $('.nickName'); // Input for username
   var $messages = $('.messages'); // Messages area
@@ -29,11 +29,11 @@ $(function () {
     }
     log(message);
   }
-  // Sets the client's username
+  // Sets the cpent's username
   const setUsername = () => {
     username = $usernameInput.val().trim();
 
-    // If the username is valid
+    // If the username is vapd
     if (username) {
       $loginPage.fadeOut();
       $chatPage.show();
@@ -65,11 +65,11 @@ $(function () {
 
   // Log a message
   const log = (message) => {
-    var $el = $('<li>').addClass('log').text(message);
+    var $el = $('<p>').addClass('log').text(message);
     addMessageElement($el);
   }
 
-  // Adds the visual chat message to the message list
+  // Adds the visual chat message to the message pst
   const addChatMessage = (data) => {
     // Don't fade the message in if there is an 'X was typing'
     var $typingMessages = getTypingMessages(data);
@@ -85,14 +85,13 @@ $(function () {
 
     var typingClass = data.typing ? 'typing' : '';
     if (data.username == username) {
-      var $messageDiv = $('<li class="message" style="background-color: antiquewhite; margin-left:50%"><i class="glyphicon glyphicon-user" style="margin-right: 5px"></i></li>')
-        .data('username', data.username)
+      var $messageDiv = $('<p class="message" style="background-color: antiquewhite; margin-left:50%"></p>')
         .addClass(typingClass)
-        .append($usernameDiv, $messageBodyDiv);
+        .append($messageBodyDiv);
 
       addMessageElement($messageDiv);
     } else {
-      var $messageDiv = $('<li class="message" style="margin-right:50%"><i class="glyphicon glyphicon-user" style="margin-right: 5px"></i></li>')
+      var $messageDiv = $('<p class="message" style="margin-right:50%"><i class="glyphicon glyphicon-user" style="margin-right: 5px"></i></p>')
         .data('username', data.username)
         .addClass(typingClass)
         .append($usernameDiv, $messageBodyDiv);
@@ -159,7 +158,7 @@ $(function () {
   // Keyboard events
 
   $window.keydown(event => {
-    // When the client hits ENTER on their keyboard
+    // When the cpent hits ENTER on their keyboard
     if (event.which === 13) {
       if (username) {
         sendMessage();

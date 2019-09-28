@@ -11,7 +11,7 @@ $(function () {
   var $messages = $('.messages'); // Messages area
   var $inputMessage = $('.inputMessage'); // Input message input box
   var $loginPage = $('.login.page'); // The login page
-  var $chatPage = $('.row'); // The chatroom page
+  var $chatPage = $('.container-2'); // The chatroom page
   // Prompt for setting a username
   var username;
   var connected = false;

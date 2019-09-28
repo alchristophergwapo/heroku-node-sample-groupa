@@ -25,13 +25,6 @@
       sans-serif;
   }
   
-  ul {
-    list-style: none;
-    word-wrap: break-word; 
-    border: 1px solid black;
-    border-radius: 20px;
-  }
-  
   .jumbotron {
     opacity: 0.7;
     filter: alpha(opacity=30);
@@ -42,15 +35,13 @@
     height: 80%;
   }
   .activeUsers {
-    overflow-y: scroll;
+    overflow-y: hidden;
   }
   .pages {
-    border: 1px solid black;
     height: 80%;
     margin: 0;
     padding: 0;
     width: 100%;
-    border-radius: 20px;
   }
   
   .page {
@@ -100,9 +91,16 @@
   }
   
   /* Chat page */
-  
-  .row {
+  .container-2 {
+    border: 1px solid black;
+    border-radius: 30px;
+  }
+  .container-2 , .activeUserArea {
     display: none;
+  }
+
+  .active_user {
+    margin-left: 25%
   }
   
   /* Font */
@@ -133,7 +131,7 @@
   .messages {
     height: 100%;
     margin: 0;
-    overflow-y: scroll;
+    overflow-y: hidden;
     padding: 10px 20px 10px 20px;
   }
   
@@ -159,6 +157,22 @@
     margin-right: 3px;
     width: 82%;
   }
+  
+  .message {
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* buttons */
+  #submit {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+  }
+
   #send {
     width: 15%;
     height: 40px;
@@ -169,15 +183,18 @@
     cursor: pointer;
   }
   
-  #submit {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+  #showActive, #chatBox {
+    padding: 10px;
     border-radius: 10px;
+    width: 150px;
+    margin-bottom: 1%;
+    margin-top: 1%
   }
-  .message {
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 5px;
+
+  #chatBox {
+    margin-left: 30%
+  }
+
+  #showActive {
+    margin-left: 10%
   }

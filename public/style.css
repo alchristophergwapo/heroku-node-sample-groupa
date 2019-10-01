@@ -38,6 +38,9 @@
     overflow-y: hidden;
     overflow-y: scroll;
   }
+  .activeUsers::-webkit-scrollbar {
+    display: none;
+  }
   .pages {
     height: 80%;
     margin: 0;

@@ -36,6 +36,7 @@
   }
   .activeUsers {
     overflow-y: hidden;
+    overflow-y: scroll;
   }
   .pages {
     height: 80%;
@@ -132,6 +133,7 @@
     height: 100%;
     margin: 0;
     overflow-y: hidden;
+    overflow-y: scroll;
     padding: 10px 20px 10px 20px;
   }
   
